@@ -65,6 +65,11 @@ collections:
     - name: Include Samba Server role
       ansible.builtin.include_role:
         name: vladgh.samba.server
+        vars: # Optionally include vars, see below for the full list
+          samba_users:
+            ...
+          samba_shares:
+            ...
 ```
 
 ### Import Playbooks
